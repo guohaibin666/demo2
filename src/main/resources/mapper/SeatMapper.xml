@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example2.demo2.dao.SeatDao">
+
+
+    <!--修改座位状态-->
+    <update id="updateSeatStatus" parameterType="java.util.Map">
+        update t_seat ts set ts.status = #{status} where ts.seat_id=#{seatId}
+    </update>
+
+
+</mapper>
